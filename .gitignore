@@ -1,0 +1,51 @@
+# ----------------------------
+# Python cache and compiled files
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+venv/
+env/
+.venv/
+.env/
+
+# ----------------------------
+# Databases / Local data
+# ----------------------------
+*.db
+*.sqlite3
+*.log
+
+# ----------------------------
+# Kivy related files
+# ----------------------------
+# kv/
+
+# ----------------------------
+# Editor and system files
+# ----------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Distribution / Packaging
+# ----------------------------
+build/
+dist/
+*.spec
+
+# ----------------------------
+# Temporary or export files
+# ----------------------------
+*.bak
+*.tmp
+*.old
+assets/__pycache__/
