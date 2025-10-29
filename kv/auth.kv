@@ -1,0 +1,41 @@
+<LoginScreen>:
+    email_input: email_input
+    password_input: password_input
+    
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: 20
+        
+        Label:
+            text: 'Theatre Checklist Manager'
+            font_size: 24
+            size_hint_y: None
+            height: 50
+        
+        TextInput:
+            id: email_input
+            hint_text: 'Email'
+            multiline: False
+            size_hint_y: None
+            height: 40
+        
+        TextInput:
+            id: password_input
+            hint_text: 'Password'
+            password: True
+            multiline: False
+            size_hint_y: None
+            height: 40
+        
+        Button:
+            text: 'Login'
+            size_hint_y: None
+            height: 40
+            on_press: root.login()
+        
+        Button:
+            text: 'Register'
+            size_hint_y: None
+            height: 40
+            on_press: root.go_to_register()

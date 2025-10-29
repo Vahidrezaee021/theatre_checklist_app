@@ -1,0 +1,58 @@
+<ProjectsScreen>:
+    projects_list: projects_list
+    
+    BoxLayout:
+        orientation: 'vertical'
+        
+        BoxLayout:
+            size_hint_y: None
+            height: 50
+            padding: 10
+            
+            Label:
+                text: 'My Projects'
+                font_size: 20
+            
+            Button:
+                text: 'New Project'
+                size_hint_x: None
+                width: 120
+                on_press: root.create_new_project()
+        
+        ScrollView:
+            GridLayout:
+                id: projects_list
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 10
+                padding: 10
+
+<ProjectListItem>:
+    size_hint_y: None
+    height: 80
+    
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 5
+        
+        Label:
+            id: project_name
+            text: 'Project Name'
+            font_size: 18
+            size_hint_y: None
+            height: 30
+        
+        Label:
+            id: project_description
+            text: 'Project Description'
+            font_size: 14
+            size_hint_y: None
+            height: 20
+        
+        Button:
+            text: 'Open'
+            size_hint_y: None
+            height: 30
+            on_press: root.open_project()
